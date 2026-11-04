@@ -9,8 +9,10 @@ leave with the whole result.** Prose explains; it does not carry the result alon
 
 ## 1. Before you write
 
-- Have the artifact first: a public repo under `github.com/Ampixa`, a Hugging Face card, a dataset, or a
-  results file. No artifact, no post: save it as an idea until there is one.
+- Have the artifact first. For a release that is the repo, model card or dataset. For an experiment or a
+  lesson, the post itself can be the artifact: the method, the full code that produced every number, and
+  that code's raw output, all in the post. Do not create a separate repo or gist just to have a link.
+  No artifact of either kind, no post: save it as an idea until there is one.
 - Know your one-sentence result. If you cannot say it with a number in it, you are not ready.
 - Check the claim survived a control. A number with no baseline or random control is an anecdote.
 
@@ -26,7 +28,9 @@ leave with the whole result.** Prose explains; it does not carry the result alon
 6. **How it was built / measured**: short, with the one messy detail that proves it is real.
 7. **What this is not**: bullets. Every limit you know about. This section is mandatory.
 8. **Where this sits**: prior work, linked.
-9. **Reproduce / Get it**: code block that actually runs, then links, licence.
+9. **Reproduce / Get it**: code that actually runs, then links, licence. In a self-contained post, print
+   the whole script in a collapsible `<details>` block with its raw output underneath, and run that exact
+   script end to end before submitting.
 
 Length follows the result: a release can be 14 minutes, a lesson 4–6. A 2-minute wall of prose with no
 figure is never right.
@@ -139,6 +143,6 @@ rebuild every chart. Never hand-type chart values.
 - [ ] Every citation and artifact is a markdown link; no bare URLs
 - [ ] Controls stated next to the result; what failed is stated
 - [ ] "What this is not" section
-- [ ] Reproduce block runs from a clean clone
+- [ ] The code shown is the code that produced the numbers, and it was run end to end as printed
 - [ ] Numbers checked against the repo's results file
 - [ ] Read the rendered preview yourself before asking for review
